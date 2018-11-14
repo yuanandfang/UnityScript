@@ -55,9 +55,9 @@ GameObject cube = GameObject.Find("MyCube");
 
 3.启动协程分别是：
 
-*   StartCoroutine(/这里直接调用方法，添加参数/)，
-   *   优势在于可以调用多个参数的方法
-*  另一种是StartCoroutine(/这里填写”字符串的方法名字”，方法参数/)。
-   *  只能调用不含参数或只包含一个参数的协程方法。
+* 1 StartCoroutine(/这里直接调用方法，添加参数/)
+    *   优势在于可以调用多个参数的方法
+* 2 StartCoroutine(/这里填写”字符串的方法名字”，方法参数/)
+    *  只能调用不含参数或只包含一个参数的协程方法。
   
 但是第一种方法不能通过StopCoroutine(/这里填写”字符串的方法名”/)来结束协程，只能通过StopAllCoroutines来结束。后一种则可以通过StopCoroutine来结束对正在执行的协程的调用。
